@@ -8,6 +8,7 @@ class Person
 	friend class PersonBuilder;
 	friend class PersonBuilderBase;
 	friend class PersonAddressBuilder;
+	friend class PersonJobBuilder;
 
 public:
 	static PersonBuilder Create( const std::string& name );
@@ -16,6 +17,12 @@ public:
 
 	void SetCity(const std::string& name);
 	void SetStreet(const std::string& name);
+
+	void SetCompany(const std::string& name);
+	void SetAddress(const std::string& name);
+	void SetSalary(int salary);
+
+	void Print();
 
 private:
 	Person();

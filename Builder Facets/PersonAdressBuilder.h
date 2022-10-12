@@ -11,7 +11,7 @@ class PersonAdressBuilder : public PersonBuilderBase
 public:
 	PersonAdressBuilder(Person& person);
 
-	PersonAdressBuilder& InCity(const std::string cityName);
-	PersonAdressBuilder& InStreet(const std::string streetName);
+	PersonAdressBuilder& InCity(const std::string& cityName);
+	PersonAdressBuilder& InStreet(const std::string& streetName);
 };
 

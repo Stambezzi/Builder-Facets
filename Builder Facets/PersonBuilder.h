@@ -4,6 +4,7 @@
 #include "Person.h"
 
 class PersonAdressBuilder;
+class PersonJobBuilder;
 
 class PersonBuilderBase
 {
@@ -11,6 +12,7 @@ public:
 	PersonBuilderBase(Person& current);
 
 	PersonAdressBuilder Lives() const;
+	PersonJobBuilder Works() const;
 
 	operator Person();
 
